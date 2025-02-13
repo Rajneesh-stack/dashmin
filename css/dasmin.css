@@ -1,0 +1,335 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* sidebar css  start*/
+.sidebar {
+    height: 100vh;
+    background-color: #f3f6f9;
+    /* position: fixed;
+    top: 0; */
+    transition: left 0.3s ease;
+}
+
+.sidebar_close {
+    display: none;
+}
+
+.sidebar h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #009cff;
+    text-transform: uppercase;
+}
+
+.side-image .content .content-name {
+    font-size: 1rem;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.side-image .content span {
+    font-size: 0.9rem;
+    margin: 0px;
+}
+
+.sidebar .side-navbar {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.sidebar .side-navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar .side-navbar .navbar-item {
+    padding: 7px 5px;
+}
+
+.sidebar .side-navbar .navbar-item .side-nav-icon {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.sidebar .side-navbar .navbar-item:hover {
+    height: 55px;
+    width: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    color: #009cff;
+}
+
+.sidebar .side-navbar .dropdown-bar:hover {
+    height: 55px;
+    width: 200px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: white;
+    color: #009cff;
+}
+
+.fa-caret-down {
+    padding-left: 10px;
+}
+
+/* sidebar css  end*/
+
+/* top-navbar start */
+/* .content-bar{
+    position: absolute;left: 200px;
+   
+} */
+/* .content-bar.width{
+    width: 100%;
+} */
+.navbar .navbar-brand {
+    display: none;
+}
+
+.navbar .navbar-brand i {
+    color: #009cff;
+    font-size: 2rem;
+}
+
+.navbar .side-nav-icon {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #009cff;
+    margin-right: 15px;
+    background-color: white;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.content-bar .navbar .search-bar {
+    height: 35px;
+    width: 200px;
+    padding-left: 8px;
+    border: none;
+    outline: none;
+}
+
+.side-nav-icon-innavbar {
+    height: 40px;
+    width: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 8px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #009cff;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    left: -80px;
+}
+
+.navbar-expand-lg .navbar-nav .drop-width {
+    width: 18rem;
+}
+
+.navbar-expand-lg .navbar-nav hr {
+    width: 17rem;
+}
+
+/* top-navbar end */
+
+/* card section start */
+.card .fa-solid {
+    font-size: 2rem;
+    color: #009cff;
+}
+
+/* card section end */
+
+/* chart section start */
+.chart .chart1 {
+    width: 49%;
+    background-color: #f3f6f9;
+}
+.chart .chart1 p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* chart section end */
+/* table section start */
+.table {
+    background-color: #f3f6f9;
+}
+
+.table h5 {
+    background: none;
+    padding-top: 20px;
+    font-weight: 400;
+}
+
+.table p {
+    background: none;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #009cff;
+}
+
+.table p a {
+    text-decoration: none;
+    color: #009cff;
+}
+
+.table .table-design th {
+    padding: 5px;
+    /* width: 130px; */
+    height: 30px;
+    background-color: #f3f6f9;
+    padding-left: 20px;
+    border: 1px solid black;
+}
+
+.table .table-design th input {
+    height: 20px;
+    width: 20px;
+}
+
+.table .table-design td input {
+    height: 20px;
+    width: 20px;
+}
+
+.table .table-design td {
+    padding: 5px;
+    width: 135px;
+    height: 30px;
+    background-color: #f3f6f9;
+    font-weight: 200;
+    padding-left: 20px;
+    border: 1px solid black;
+}
+
+/* table section end */
+
+/* home-card css start */
+.card-3-home a,
+.cross {
+    color: #009cff;
+    text-decoration: none;
+}
+
+.card-3-home button {
+    background-color: #009cff;
+
+}
+
+/* home-card css start */
+/* footer css start */
+.footer .foot-content {
+    height: 70px;
+    background-color: #f3f6f9;
+}
+
+.footer .foot-content h5 span {
+    color: #009cff;
+    font-size: 1rem;
+}
+
+.footer .foot-content p span {
+    color: #009cff;
+}
+
+/* footer css end */
+/* sign in form css */
+.login-container {
+    height: 400px;
+    width: 450px;
+    padding: 30px;
+    background: #fff;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    font-weight: bold;
+}
+
+.dashmin {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* sign in form css */
+/* error in form css */
+.error {
+    background-color: #f3f6f9;
+    height: 400px;
+}
+
+.error h3 {
+    color: #009cff;
+    font-size: 3.5rem;
+
+}
+
+.error h2 {
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.error h4 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.error a {
+    height: 50px;
+    background-color: #009cff;
+    padding: 10px;
+}
+.error a:hover {
+    background-color: #009cff;
+}
+/* error page css */
+/* blank page css */
+.blank {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* blank page css */
+.sidebar.open {
+    left: -220px;
+}
+

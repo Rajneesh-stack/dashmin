@@ -1,255 +1,340 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- sidebar code start -->
+<?php
+include('sidebar.php');
+?>
+<!-- sidebar code end -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashmin</title>
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/responsiv.css">
-    <link rel="stylesheet" href="./css/dashmin.css">
-</head>
-
-<body>
-
-    <div class="container-fluid">
-        <div class="row">
-            <!-- sidebar start -->
-            <div class="sidebar col-lg-4 ms-0 ps-4 " id="sidebar">
-                <div class="row">
-                    <div class="col-lg-4 pt-2 nav-heading">
-                        <div class="row">
-                            <div class="col-lg-2 ms-3 pt-1">
-                                <h1> <i>#</i></h1>
-                            </div>
-                            <div class="col-lg-2 ms-3 pt-1">
-                                <h2>dashmin</h2>
-                            </div>
+<!-- content-bar code end -->
+<?php
+include('mainheader.php');
+?>
+<!-- card section start -->
+<section>
+    <div class="container-fluid pt-4">
+        <div class="row g-4">
+            <div class="col-xl-3 col-sm-6">
+                <div class=" card bg-light rounded d-flex align-items-center justify-content-between p-4 border-0">
+                    <div class="d-flex justify-content-evenly">
+                        <i class="fa-solid fa-chart-line mt-1"></i>
+                        <div class="ms-5">
+                            <p class="mb-2">Today Sale</p>
+                            <h6 class="mb-0">$1234</h6>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-2 ms-2 pt-1 nav-img">
-                                <img src="./image/user.jpg" alt="">
-                            </div>
-                            <div class="col-lg-4 ms-4 pt-1 img-name w-25">
-                                <p class="ps-3 fs-5 pt-2 fw-bolder mb-0">Jhon Deo</p>
-                                <span class="admin">Admin</span>
-                            </div>
-                        </div>
-
-
                     </div>
-                    <ul type="none" class=" side-list ps-3 mt-4 mb-0 ">
-                        <a href="">
-                            <li>
-                                <div class="d-flex  align-content-center flex-row ">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-gauge-high"></i>
-                                    </div>
-                                    <div class="list-name">
-                                        <span>Dashboard</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <a href="javascript:void(0)">
-                            <li class="mt-3">
-                                <div class="d-flex  align-content-center flex-row drop">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-laptop"></i>
-                                    </div>
-                                    <div class="list-name ">
-                                        <span>Element</span>
-                                        <span class="up-icon">
-                                            <i class=" fa-solid fa-angle-down" onclick="dropdown()"></i>
-                                        </span>
-                                        <ul type="none" class="dropdown show_drop" id="drop">
-                                            <a href="">
-                                                <li>Button</li>
-                                            </a>
-                                            <a href="">
-                                                <li>Typography</li>
-                                            </a>
-                                            <a href="">
-                                                <li>Other Element</li>
-                                            </a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="mt-3">
-                                <div class="d-flex  align-content-center flex-row">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-list"></i>
-                                    </div>
-                                    <div class="list-name">
-                                        <span>Widgets</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="mt-3">
-                                <div class="d-flex  align-content-center flex-row">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-keyboard"></i>
-                                    </div>
-                                    <div class="list-name">
-                                        <span>Form</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="mt-3">
-                                <div class="d-flex  align-content-center flex-row">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-table"></i>
-                                    </div>
-                                    <div class="list-name">
-                                        <span>Table</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <a href="">
-                            <li class="mt-3">
-                                <div class="d-flex  align-content-center flex-row">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-chart-bar"></i>
-                                    </div>
-                                    <div class="list-name">
-                                        <span>Chart</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                        <a href="javascript:void(0)">
-                            <li class="mt-3">
-                                <div class="d-flex  align-content-center flex-row drop">
-                                    <div class="list-icon">
-                                        <i class="fa-solid fa-file"></i>
-                                    </div>
-                                    <div class="list-name">
-                                        <span>Pages</span>
-                                        <span class="up-icon">
-                                            <i class="fa-solid fa-angle-down"></i>
-                                        </span>
-                                        <ul type="none" class="dropdown">
-                                            <a href="">
-                                                <li>Sign in</li>
-                                            </a>
-                                            <a href="">
-                                                <li>Sign up</li>
-                                            </a>
-                                            <a href="">
-                                                <li>Error 404</li>
-                                            </a>
-                                            <a href="">
-                                                <li>Blank page</li><a>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </a>
-                    </ul>
+
                 </div>
             </div>
-            <!-- sidebar end -->
-
-            <!-- content bar nav bar start -->
-            <nav class="navbar-section col-lg-9 ">
-                <div class="navbar ">
-                    <div class="col-lg-4 d-flex align-items-center justify-content-start">
-                        <div class="list-icon ">
-                            <i class="fa-solid fa-bars fs-5"></i>
+            <div class="col-xl-3 col-sm-6">
+                <div class=" card bg-light rounded d-flex align-items-center justify-content-between p-4 border-0">
+                    <div class="d-flex justify-content-between">
+                        <i class="fa-solid fa-chart-line mt-1 ms-0"></i>
+                        <div class="ms-5">
+                            <p class="mb-2">Today Sale</p>
+                            <h6 class="mb-0">$1234</h6>
                         </div>
-                        <input type="search" placeholder="search..." class="search-box">
-                    </div>
-                    <div class="col-lg-8 nav-link d-flex justify-content-evenly align-content-center">
-                        <ul type="none" class="d-flex align-content-center">
-                            <li class="d-flex justify-content-center nav-link-item">
-                                <div class="nav-link-icon">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div class="pt-3 ps-2 ">Message
-                                    <i class=" fa-solid fa-angle-down"></i>
-                                </div>
-                                <div class="nav-drop">
-                                    <ul type="none">
-                                        <li>hii</li>
-                                        <li>hii</li>
-                                        <li>hii</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="d-flex justify-content-center nav-link-item">
-                                <div class="nav-link-icon">
-                                    <i class="fa-solid fa-bell"></i>
-                                </div>
-                                <div class="pt-3 ps-2 ">Notification
-                                    <i class=" fa-solid fa-angle-down"></i>
-                                </div>
-                                <div class="nav-drop">
-                                    <ul type="none">
-                                        <li>hii</li>
-                                        <li>hii</li>
-                                        <li>hii</li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="d-flex justify-content-center nav-link-item">
-                                <div class="nav-link-icon">
-                                    <img src="./image/user.jpg" alt="">
-                                </div>
-                                <div class="pt-3 ps-2 ">Rajneesh
-                                    <i class=" fa-solid fa-angle-down"></i>
-                                </div>
-                                <div class="nav-drop">
-                                    <ul type="none">
-                                        <li>hii</li>
-                                        <li>hii</li>
-                                        <li>hii</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-
                     </div>
                 </div>
-
-
-                <section class="homepage" id="homepage">
-                    <div class="row">
-                        <div class="col-lg-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia repudiandae, inventore neque ipsam incidunt odit deleniti obcaecati dolores veritatis. Ducimus eligendi aperiam saepe reprehenderit neque maxime consequatur sint aut.</div>
-                        <div class="col-lg-6">hiiLorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia repudiandae, inventore neque ipsam incidunt odit deleniti obcaecati dolores veritatis. Ducimus eligendi aperiam saepe reprehenderit neque maxime consequatur sint aut.</div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class=" card bg-light rounded d-flex align-items-center justify-content-between p-4 border-0">
+                    <div class="d-flex justify-content-evenly">
+                        <i class="fa-solid fa-chart-line mt-1"></i>
+                        <div class="ms-5">
+                            <p class="mb-2">Today Sale</p>
+                            <h6 class="mb-0">$1234</h6>
+                        </div>
                     </div>
-                </section>
-            </nav>
-            <!-- content bar nav bar start -->
-            <!-- home page is start -->
 
-            <!-- home page is start -->
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6">
+                <div class=" card bg-light rounded d-flex align-items-center justify-content-between p-4 border-0">
+                    <div class="d-flex justify-content-evenly">
+                        <i class="fa-solid fa-chart-line mt-1"></i>
+                        <div class="ms-5">
+                            <p class="mb-2">Today Sale</p>
+                            <h6 class="mb-0">$1234</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- card section end -->
+
+<!-- chart section start -->
+<section class="chart">
+    <div class="container-fluid pt-4 mb-3">
+        <div class="row g-4">
+            <div class="col-xl-6 col-sm-12">
+                <div class="bg-light text-center rounded p-4">
+                    <div class=" d-flex justify-content-between align-items-center">
+                        <p class=" fw-medium">Single Line Chart</p>
+                        <a href="chartpage.php" class="text-primary">Show All</a>
+                    </div>
+                    <div class="live-chart1">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+                <div class="bg-light text-center rounded p-4">
+                    <div class=" d-flex justify-content-between align-items-center">
+                        <p class=" fw-medium">Single Line Chart</p>
+                        <a href="chartpage.php" class="text-primary">Show All</a>
+                    </div>
+                    <div class="live-chart1">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
+</section>
+<!-- chart section end -->
+
+<!-- table section start -->
+<section>
+    <div class="container-fluid table">
+        <div class="row">
+            <div class="table-top-heading  d-inline-flex justify-content-between">
+                <h5>Recent sales</h5>
+                <p><a href="table.php">Show all</a></p>
+            </div>
+            <div class="table-design  overflow-scroll d-flex justify-content-center h-100">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox">
+                            </th>
+                            <th>Date</th>
+                            <th>Invoice</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>01 JAN 2025</td>
+                            <td>INV-0123</td>
+                            <td>Rajneesh</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td><a href="" class="btn btn-sm btn-primary">Detaile</a></td>
 
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        const dropdown = () => {
-            const dropElement = document.getElementById("drop");
-            if (dropElement) {
-                dropElement.classList.toggle("show_drop");
-            } else {
-                console.error("Dropdown element not found!");
-            }
-        };
-    </script>
-</body>
 
-</html>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>01 JAN 2025</td>
+                            <td>INV-0123</td>
+                            <td>Rajneesh</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td><a href="" class="btn btn-sm btn-primary">Detaile</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>01 JAN 2025</td>
+                            <td>INV-0123</td>
+                            <td>Rajneesh</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td><a href="" class="btn btn-sm btn-primary">Detaile</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>01 JAN 2025</td>
+                            <td>INV-0123</td>
+                            <td>Rajneesh</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td><a href="" class="btn btn-sm btn-primary">Detaile</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>01 JAN 2025</td>
+                            <td>INV-0123</td>
+                            <td>Rajneesh</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td><a href="" class="btn btn-sm btn-primary">Detaile</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                            <td>01 JAN 2025</td>
+                            <td>INV-0123</td>
+                            <td>Rajneesh</td>
+                            <td>$123</td>
+                            <td>paid</td>
+                            <td><a href="" class="btn btn-sm btn-primary">Detaile</a></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- table section start -->
+
+<!-- three-card section start -->
+<section class="card-3-home">
+    <div class="container-fluid pt-4">
+        <div class="row g-4">
+            <div class="col-sm-12 col-md-6 col-xl-4 mb-3">
+                <div class="h-100 bg-light rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h6 class="mb-0">Messages</h6>
+                        <a href="">Show All</a>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-3">
+                        <img class="rounded-circle flex-shrink-0" src="image/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Jhon Doe</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                            <span>Short message goes here...</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-3">
+                        <img class="rounded-circle " src="image/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Jhon Doe</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                            <span>Short message goes here...</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-3">
+                        <img class="rounded-circle flex-shrink-0" src="image/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Jhon Doe</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                            <span>Short message goes here...</span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center pt-3">
+                        <img class="rounded-circle flex-shrink-0" src="image/user.jpg" alt="" style="width: 40px; height: 40px;">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-0">Jhon Doe</h6>
+                                <small>15 minutes ago</small>
+                            </div>
+                            <span>Short message goes here...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 mb-3">
+                <div class="bg-light rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Calender</h6>
+                        <a href="index.php">Show All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 mb-3">
+                <div class="bg-light rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">To Do List</h6>
+                        <a href="index.php">Show All</a>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <input class="form-control bg-transparent " type="text" placeholder="Enter task">
+                        <button type="button" class="btn btn-primary ms-2">Add</button>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2">
+                        <input class="form-check-input m-0" type="checkbox" checked>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span><del>Short task goes here...</del></span>
+                                <i class="fa fa-times cross"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center pt-2">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- three-card section start -->
+
+
+<!-- footer section start -->
+<?php
+include('mainfooter.php');
+?>
+<!--footer section end-->

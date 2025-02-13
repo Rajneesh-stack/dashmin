@@ -1,0 +1,23 @@
+@media (max-width:1024px) {
+    .chart .chart1 {
+        width: 100%;
+    }
+}
+@media(max-width:768px) {
+    .sidebar {
+        display: none;
+    }
+    .navbar .navbar-brand {
+        display: block;
+        color: #009cff;
+        ;
+    }
+    .navbar .container-fluid {
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+    .navbar-nav .dropdown span {
+        display: none;
+    }
+
+}
